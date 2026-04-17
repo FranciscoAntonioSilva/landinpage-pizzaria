@@ -1,0 +1,34 @@
+@import url(../global/global.css);
+@import url(./partials/header.css);
+@import url(./partials/heroBanner.css);
+@import url(./partials/sectionPizzas.css);
+@import url(./partials/sectionSobre.css);
+@import url(./partials/sectionChefs.css);
+@import url(./partials/localizacao.css);
+@import url(./partials/avaliacoes.css);
+@import url(./partials/contato.css);
+@import url(./partials/footer.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--preto);
+}
+
+img {
+    display: block;
+    min-width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*Aplicar estilos em diferentes tamanhos de títulos*/

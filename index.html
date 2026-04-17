@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzalandia</title>
+    <link rel="stylesheet" href="./assets/styles/page/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+        integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlayHeader"></div>
+        <div class="headerContainer">
+            <header class="header">
+                <!-- <div class="header_logo">
+                    <img src="./assets/images/logo.png" alt="logo pizzalandia">
+                </div> -->
+                <a href="index.html" target="_self" class="header_logo">
+                    <img src="./assets/images/logo.png" alt="logo pizzalandia">
+                </a>
+
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="slide-menu">
+                    <ul>
+                        <li><a href="#pizzas">Pizzas</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#avaliacoes">Avaliações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="overlay"></div>
+                <a href="https://wa.me/+5586999887766?text=Olá!%20Vim%20pelo%20site%20da%20Pizzalandia%20e%20quero%20pedir%20uma%20pizza%20🍕" target="_blank"  class="btnPedido">
+                    Fazer pedido
+                    <i class="fa-brands fa-whatsapp icone"></i>
+                </a>
+            </header>
+        </div>
+
+        <main>
+            <section class="hero hidden">
+                <h1 class="hero_title">Mais que pizza. Uma explosão de <span class="hero_detail">Sabor</span></h1>
+                <p class="hero_description">Sabores intensos, ingredientes frescos e pizzas feitas pra surpreender do
+                    primeiro ao último pedaço.</p>
+                <a href="https://wa.me/+5586999887766?text=Olá!%20Vim%20pelo%20site%20da%20Pizzalandia%20e%20quero%20pedir%20uma%20pizza%20🍕" target="_blank" class="btnPedido">
+                    Faça já seu pedido
+                    <i class="fa-brands fa-whatsapp icone"></i>
+                </a>
+            </section>
+
+            <section id="pizzas" class="sectionPizzas hidden">
+                <h1 class="sectionPizzas_title">Nossas pizzas mais populares</h1>
+
+                <div class="cardContainer dragscroll">
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza01.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Suprema de frango & pimentões</h4>
+                            <p class="cardPizza_description">Uma explosão de sabor com frango desfiado, creme aveludado
+                                e pimentões levemente tostados.</p>
+                            <span class="cardPizza_preco">R$ 59,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza02.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Margherita Clássica Napoletana</h4>
+                            <p class="cardPizza_description">A receita original italiana com molho artesanal, muçarela
+                                premium e manjericão fresco.</p>
+                            <span class="cardPizza_preco">R$ 59,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza03.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Pepperoni Supreme</h4>
+                            <p class="cardPizza_description">Clássica e irresistível, com fatias selecionadas e queijo
+                                extra gratinado.</p>
+                            <span class="cardPizza_preco">R$ 49,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza04.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Mix da Casa Premium</h4>
+                            <p class="cardPizza_description">Os sabores mais pedidos reunidos em uma só pizza.</p>
+                            <span class="cardPizza_preco">R$ 69,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza05.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Mediterrânea Premium</h4>
+                            <p class="cardPizza_description">Atum selecionado, queijo gratinado e toque de azeitonas
+                                negras.</p>
+                            <span class="cardPizza_preco">R$ 59,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza06.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Bella Aglio</h4>
+                            <p class="cardPizza_description">Clássica combinação de queijo derretido, alho aromático e
+                                toque de tomate.</p>
+                            <span class="cardPizza_preco">R$ 49,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cardPizza hidden">
+                        <div class="cardPizza_image">
+                            <img src="./assets/images/pizza07.jpg" alt="">
+                        </div>
+                        <div class="cardPizza_content">
+                            <h4 class="cardPizza_title">Agridoce Defumada</h4>
+                            <p class="cardPizza_description">Frango com abacaxi, cebola roxa e mozzarella, finalizados
+                                com barbecue e coentro fresco. Uma explosão tropical e defumada.</p>
+                            <span class="cardPizza_preco">R$ 89,90</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--Utiliza o sistema de grid aqui-->
+            <div class="sobreContainer hidden">
+                <section id="sobre" class="sectionSobre gridLayout">
+                    <h1 class="sectionSobre_title sm-12 lg-7-12">
+                        Conheça um
+                        pouco sobre
+                        nossa história
+                    </h1>
+                    <img src="./assets/images/image-sobre.png" alt="" class="sm-12 md-3-10 lg-1-5">
+                    <div class="sectionSobre_content sm-12 lg-7-12">
+                        <p>
+                            Fundada com o sonho de resgatar a verdadeira essência da gastronomia italiana, a Pizzalandia
+                            nasceu para ser um refúgio da tradição em meio à modernidade. Desde a abertura de suas portas, a
+                            casa mantém o compromisso com a abordagem clássica: massas de longa fermentação, abertas à mão,
+                            e um forno sempre na temperatura ideal para garantir a borda aerada e o centro suculento que
+                            definem uma pizza de excelência.
+                        </p>
+                        <p>
+                            O cardápio da Pizzalandia é um cuidadoso equilíbrio entre o passado e a inovação. Enquanto as
+                            pizzas clássicas honram receitas históricas com ingredientes de origem controlada, as pizzas
+                            especiais — como a nossa famosa combinação de frango, abacaxi e barbecue — trazem um toque
+                            autoral e gourmet que surpreende os paladares mais exigentes. Na Pizzalandia, cada fatia conta
+                            uma história de paixão pelo fogo e respeito aos ingredientes.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="chefsContainer hidden">
+                <section class="sectionChefs gridLayout">
+                    <h1 class="sm-12">Nossos chefs</h1>
+                    
+                    <div class="cardChefs hidden sm-12 lg-4">
+                        <p class="nomeChef">Antonio Ribeiro</p>
+                    </div>
+
+                    <div class="cardChefs hidden sm-12 lg-4">
+                        <p class="nomeChef">Alex Monteiro</p>
+                    </div>
+
+                    <div class="cardChefs hidden sm-12 lg-4">
+                        <p class="nomeChef">Carlos Viera</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="sectionLocalizacao hidden">
+                <h1>Venha nos conhecer</h1>
+
+                <div class="enderecoImage">
+                    <img src="./assets/images/image-pizzaria.jpg" alt="">
+                    <address class="endereco_info">
+                        Rua Florença, s/n (Esquina com a Via Vêneto) – Vila Toscana
+                    </address>
+                </div>
+
+                <p>
+                    Estamos abertos todos os dias
+                    <span>Das 17:00 às 00:00</span>
+                </p>
+            </section>
+
+            <div class="avaliacoesContainer hidden">
+                <section id="avaliacoes" class="sectionAvaliacoes gridLayout">
+                    <h1 class="sm-12">Avaliações dos nossos clientes</h1>
+
+                    <article class="cardTestemunials_container sm-12 lg-4">
+
+                        <div class="cardTestemunials">
+                            <div class="cardTestemunials_perfil">
+                                <div class="cardTestemunials_image">
+                                    <img src="./assets/images/perfil01.jpg" alt="">
+                                </div>
+                                <div class="cardTestemunials_nome">
+                                    <span>Maria Nunes</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="cardTestemunials_text">
+                                <p>A melhor da região! Massa de fermentação natural leve e recheios inovadores. Uma experiência gourmet que vale cada centavo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="cardTestemunials_container sm-12 lg-4">
+
+                        <div class="cardTestemunials">
+                            <div class="cardTestemunials_perfil">
+                                <div class="cardTestemunials_image">
+                                    <img src="./assets/images/perfil02.jpg" alt="">
+                                </div>
+                                <div class="cardTestemunials_nome">
+                                    <span>Antonio</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="cardTestemunials_text">
+                                <p>Qualidade excepcional dos ingredientes e sabor autêntico. A abordagem clássica da Pizzalandia faz toda a diferença. Recomendo muito!
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="cardTestemunials_container sm-12 lg-4">
+
+                        <div class="cardTestemunials">
+                            <div class="cardTestemunials_perfil">
+                                <div class="cardTestemunials_image">
+                                    <img src="./assets/images/perfil03.jpg" alt="">
+                                </div>
+                                <div class="cardTestemunials_nome">
+                                    <span>Elena</span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="cardTestemunials_text">
+                                <p>Melhor pizzaria da região! A Pizzalandia consegue unir tradição com sabores inovadores de um jeito único. A massa de fermentação natural é divina e o molho barbecue deles é um diferencial à parte. Vale cada centavo pela experiência gourmet!</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </section>
+            </div>
+
+            <div class="contatoContainer hidden">
+                <section id="contato" class="sectionContato">
+                    <h1>E aí, bateu aquela fome?<wbr></wbr>
+                        Faça já seu pedido</h1>
+
+                    <a href="https://wa.me/+5586999887766?text=Olá!%20Vim%20pelo%20site%20da%20Pizzalandia%20e%20quero%20pedir%20uma%20pizza%20🍕" target="_blank" class="btnPedido">
+                        Fazer pedido
+                        <i class="fa-brands fa-whatsapp icone"></i>
+                    </a>
+                </section>
+            </div>
+        </main>
+
+        <div class="footerContainer">
+            <footer class="footer gridLayout">
+                <div class="logo-footer sm-12 md-2-5">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="lista sm-12 md-2-5 lg-3">
+                    <h4>Nossas redes sociais</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram icone"></i>
+                                pizzalandia_ofc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f icone"></i>
+                                pizzalandia_ofc
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lista sm-12 md-8-11 lg-3">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li>
+                            <a href="#pizzas">Pizzas</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lista sm-12 md-8-11 lg-3">
+                    <h4>Nossas redes sociais</h4>
+                    <ul>
+                        <li>(86) 99988-7766</li>
+                        <li>pizzalandia@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="line sm-12">
+                    <p>&copy;2026 Todos os direitos reservados. <wbr> Desenvolvido por Francisco</p>
+                </div>
+            
+            </footer>
+        </div>
+    </div>
+</body>
+
+<script src="./assets/js/global/main.js"></script>
+
+</html>

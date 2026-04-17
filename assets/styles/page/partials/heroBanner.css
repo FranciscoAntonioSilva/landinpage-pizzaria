@@ -1,0 +1,66 @@
+@import url('../../global/global.css');
+
+/*Depois substituir os valores em pixel por REM ou EM*/
+
+.hero {
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, .8), rgb(0, 0, 0, .5)),
+        url(../../../images/hero-image.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 43.75rem;
+    color: var(--branco);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hero_title {
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+.hero_detail {
+    color: var(--primaria);
+}
+
+.hero_description {
+    font-weight: 300;
+    font-size: var(--small);
+}
+
+.hero>.btnPedido {
+    width: 240px;
+}
+
+.hero .btnPedido .fa-whatsapp {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 46.875em) {
+    .hero {
+        aspect-ratio: 1920 / 1080;
+        width: calc(100vw - 1rem);
+        min-height: 68.75rem;
+    }
+
+    .hero_title,
+    .hero_description {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .hero {
+        min-height: 48.75rem;
+        width: 100%;
+        max-width: 125rem;
+    }
+}
+

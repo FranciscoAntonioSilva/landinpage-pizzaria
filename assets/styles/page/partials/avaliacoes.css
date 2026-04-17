@@ -1,0 +1,77 @@
+@import url(../../global/global.css);
+
+.sectionAvaliacoes {
+    width: 100%;
+    max-width: 87.5rem;
+    margin: auto;
+    padding: 7rem 2rem;
+}
+
+.sectionAvaliacoes h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cardTestemunials {
+    background-color: var(--branco1);
+    padding: 1rem;
+}
+
+.cardTestemunials_perfil {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.cardTestemunials_image {
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cardTestemunials_image img {
+    width: 100%;
+}
+
+.cardTestemunials_nome span {
+    display: block;
+}
+
+.cardTestemunials_nome .fa-star {
+    color: #f0f01a;
+}
+
+.sectionAvaliacoes .sm-12 {
+    grid-column: span 12;
+}
+
+.cardTestemunials_container {
+    container: testemunialsContainer / inline-size;
+}
+
+@container testemunialsContainer (min-width: 45rem) {
+    .cardTestemunials {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cardTestemunials_perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardTestemunials_text {
+        max-width: 31.25rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .sectionAvaliacoes .lg-4 {
+        grid-column: span 4;
+    }
+
+    .cardTestemunials_container {
+        display: flex;
+    }
+}

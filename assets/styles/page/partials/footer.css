@@ -1,0 +1,78 @@
+@import url(../../global/global.css);
+
+.footer {
+    max-width: 87.5rem;
+    color: var(--branco);
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.footer .sm-12 {
+    grid-column: span 12;
+}
+
+.logo-footer img {
+    width: 100%;
+}
+
+.logo-footer {
+    width: 200px;
+    margin: auto;
+}
+
+.lista {
+    margin-bottom: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: var(--small);
+}
+
+.footer ul li {
+    margin-block: .5rem;
+}
+
+.footer ul a {
+    color: var(--branco);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer .icone {
+    font-size: 1.2rem;
+}
+
+.footer .line {
+    border-top: 1px solid var(--branco);
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer h4 {
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 46.875em) {
+    .footer .md-2-5 {
+        grid-column: 2 / 6;
+    }
+
+    .footer .md-8-11 {
+        grid-column: 8 / 12;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    .footer .lg-3 {
+        grid-column: span 2;
+    }
+
+    .lista {
+        margin: 0;
+    }
+}
