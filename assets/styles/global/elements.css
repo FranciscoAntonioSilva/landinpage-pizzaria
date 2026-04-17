@@ -77,6 +77,10 @@ h5 {
     transition: all 1s;
 }
 
+.sectionChefs .cardChefs:nth-child(1) {
+    transition-delay: 100ms;
+}
+
 .cardContainer .cardPizza:nth-child(2),
 .sectionChefs .cardChefs:nth-child(2) {
     transition-delay: 300ms;
